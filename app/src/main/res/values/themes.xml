@@ -1,0 +1,375 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme_someProject_Light" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/black_to_rename</item>
+        <item name="colorSecondaryVariant">@color/black_to_rename</item>
+        <item name="colorOnSecondary">@color/black_to_rename</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Customize your theme here. -->
+        <item name="colorControlNormal">@color/red</item>
+    </style>
+
+    <style name="Theme_someProject_Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/black_to_rename</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/black_to_rename</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <!-- Customize your theme here. -->
+        <item name="android:background">@color/black_to_rename</item>
+    </style>
+
+    <style name="Text12OpenSansBoldBlack">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+        <item name="android:textColor">@color/black_to_rename</item>
+    </style>
+
+    <style name="Text16OpenSansRegularBlack">
+        <item name="android:textSize">@dimen/text_size_common</item>
+        <item name="fontFamily">@font/open_sans_regular</item>
+        <item name="android:textColor">@color/black_to_rename</item>
+    </style>
+
+    <style name="Text14OpenSansSemiBoldShadowGray">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="fontFamily">@font/open_sans_semi_bold</item>
+        <item name="android:textColor">@color/shadowGrey</item>
+    </style>
+
+    <style name="Text14OpenSansSemiBoldBlue">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="fontFamily">@font/open_sans_semi_bold</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_one</item>
+    </style>
+
+    <style name="Text16OpenSansSemiBoldWhite">
+        <item name="android:textSize">@dimen/text_size_common</item>
+        <item name="fontFamily">@font/open_sans_semi_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_one</item>
+    </style>
+
+    <style name="Text13SomeFontSlabWebBoldBlack">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="fontFamily">@font/some_font__web_bold</item>
+        <item name="android:textColor">@color/black_to_rename</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_zero</item>
+    </style>
+
+    <style name="Text16SomeFontSlabWebBoldBlack">
+        <item name="android:textSize">@dimen/text_size_common</item>
+        <item name="fontFamily">@font/some_font__web_bold</item>
+        <item name="android:textColor">@color/black_to_rename</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_zero</item>
+    </style>
+
+    <style name="Text16SomeFontSlabWebBoldWhite">
+        <item name="android:textSize">@dimen/text_size_common</item>
+        <item name="fontFamily">@font/some_font__web_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_zero</item>
+    </style>
+
+    <style name="Text22SomeFontSlabWebBoldBlack">
+        <item name="android:textSize">@dimen/text_size_22</item>
+        <item name="fontFamily">@font/some_font__web_bold</item>
+        <item name="android:textColor">@color/black_to_rename</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_zero</item>
+    </style>
+
+    <style name="Text22SomeFontSlabWebBoldWhite">
+        <item name="android:textSize">@dimen/text_size_22</item>
+        <item name="fontFamily">@font/some_font__web_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_zero</item>
+    </style>
+
+    <style name="Text13SomeFontSlabWebBoldWhite">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="fontFamily">@font/some_font__web_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_zero</item>
+    </style>
+
+    <style name="Text13SomeFontSlabWebBoldShadowGrey">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="fontFamily">@font/some_font__web_bold</item>
+        <item name="android:textColor">@color/shadowGrey</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_zero</item>
+    </style>
+
+    <style name="Text14RobotoRegularBlack">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/black_to_rename</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_common</item>
+    </style>
+
+    <style name="HintTextAppearance" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">@dimen/text_size_common</item>
+        <item name="android:textColor">@color/shadowGrey</item>
+        <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+
+    <style name="CustomThemeAlertDialog" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlayRoundedDialog</item>
+        <item name="colorSurface">@color/white</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlayRoundedDialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/rounded_dialog_radius</item>
+    </style>
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetRoundedCustomStyle</item>
+    </style>
+
+    <style name="BottomSheetRoundedCustomStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_top_rounded_bottom_sheet</item>
+    </style>
+
+    <style name="MenuText">
+        <item name="fontFamily">@font/open_sans_semi_bold</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="ErrorScreen">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ErrorScreen.Title">
+        <item name="android:textSize">@dimen/text_size_big</item>
+        <item name="android:layout_marginTop">@dimen/error_screen_top_margin_title</item>
+        <item name="android:fontFamily">@font/some_font_slab_bold</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_common</item>
+    </style>
+
+    <style name="ErrorScreen.Description">
+        <item name="android:textSize">@dimen/text_size_common</item>
+        <item name="android:layout_marginTop">@dimen/error_screen_top_margin_description</item>
+        <item name="android:fontFamily">@font/open_sans_regular</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_zero</item>
+    </style>
+
+    <style name="ErrorScreen.Button">
+        <item name="android:textColor">@color/black_to_rename</item>
+        <item name="android:textSize">@dimen/error_screen_text_size_button</item>
+        <item name="android:layout_marginBottom">@dimen/error_screen_bottom_margin_button</item>
+        <item name="android:fontFamily">@font/some_font__web_bold</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_zero</item>
+        <item name="android:layout_gravity">bottom|center</item>
+        <item name="android:background">@drawable/bg_white_rounded_button</item>
+    </style>
+
+    <style name="SnackBarText">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:layout_marginEnd">@dimen/snackbar_end_margin_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/open_sans_semi_bold</item>
+    </style>
+
+    <style name="CommonAlertDialogTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/some_font__web_bold</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_big</item>
+        <item name="android:textColor">@color/black_to_rename</item>
+        <item name="android:textSize">@dimen/text_size_common</item>
+        <item name="android:layout_marginTop">@dimen/margin_big</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="CommonAlertDialogDescription">
+        <item name="android:layout_width">@dimen/mach_constraint</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="android:fontFamily">@font/open_sans_semi_bold</item>
+        <item name="android:gravity">left</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_one</item>
+        <item name="android:translationY">-0.47dp</item>
+        <item name="android:textColor">@color/black_to_rename</item>
+        <item name="android:textSize">@dimen/common_alert_dialog_text_size_description</item>
+    </style>
+
+    <style name="CommonAlertDialogButtonText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/some_font__web_bold</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_zero</item>
+        <item name="android:textSize">@dimen/common_alert_dialog_text_size_button</item>
+        <item name="android:layout_marginEnd">@dimen/margin_big</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="CommonAlertDialogButtonText.Positive">
+        <item name="android:layout_marginBottom">@dimen/margin_common</item>
+        <item name="android:layout_marginTop">@dimen/margin_big</item>
+        <item name="android:textColor">@color/black_to_rename</item>
+    </style>
+
+    <style name="CommonAlertDialogButtonText.Negative">
+        <item name="android:textColor">@color/shadowGrey</item>
+    </style>
+
+    <style name="OnboardingDot">
+        <item name="android:layout_height">@dimen/onboarding_dot_size</item>
+        <item name="android:layout_width">@dimen/onboarding_dot_size</item>
+        <item name="android:layout_marginLeft">@dimen/onboarding_dot_size</item>
+        <item name="android:layout_marginRight">@dimen/onboarding_dot_size</item>
+        <item name="android:src">@drawable/onboarding_dot</item>
+    </style>
+
+    <style name="AuthTitle">
+        <item name="android:textSize">@dimen/text_size_big</item>
+        <item name="android:fontFamily">@font/some_font__web_bold</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_common</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/black_to_rename</item>
+    </style>
+
+    <style name="AuthDescription">
+        <item name="android:textSize">@dimen/text_size_common</item>
+        <item name="android:fontFamily">@font/open_sans_regular</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_zero</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/black_to_rename</item>
+        <item name="android:layout_marginTop">@dimen/margin_common</item>
+    </style>
+
+    <style name="AuthNumberPasswordHint">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_zero</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@color/black_to_rename</item>
+        <item name="android:layout_marginTop">@dimen/auth_offer_number_password_hint_margin</item>
+    </style>
+
+    <style name="TextInputLayoutCursorColor" parent="">
+        <item name="colorPrimary">@color/black_to_rename</item>
+    </style>
+
+    <style name="AuthTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="hintTextAppearance">@style/HintTextAppearance</item>
+        <item name="android:textAppearance">@style/Text16OpenSansRegularBlack</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="boxStrokeColor">@color/black_to_rename</item>
+        <item name="prefixTextAppearance">@style/Text16OpenSansRegularBlack</item>
+        <item name="errorTextColor">@color/red</item>
+        <item name="errorIconTint">@color/red</item>
+        <item name="colorControlActivated">@color/black_to_rename</item>
+        <item name="colorPrimary">@color/black_to_rename</item>
+        <item name="theme">@style/TextInputLayoutCursorColor</item>
+    </style>
+
+    <style name="AuthTextInputLayout.Number">
+        <item name="android:hint">@string/auth_enter_number_hint</item>
+        <item name="prefixText">@string/auth_enter_number_hint</item>
+    </style>
+
+    <style name="AuthTextInputLayout.Password">
+        <item name="android:hint">@string/auth_enter_password_hint</item>
+        <item name="endIconMode">password_toggle</item>
+        <item name="endIconDrawable">@drawable/selector_password_visibility</item>
+    </style>
+
+    <style name="AuthEditText">
+        <item name="android:textAppearance">@style/Text16OpenSansRegularBlack</item>
+        <item name="android:paddingEnd">@dimen/mach_constraint</item>
+        <item name="android:paddingTop">@dimen/auth_edittext_top_padding</item>
+        <item name="android:paddingStart">@dimen/mach_constraint</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="AuthEditText.Number">
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:maxLength">12</item>
+    </style>
+
+    <style name="AuthEditText.Password">
+        <item name="android:inputType">textPassword</item>
+        <item name="android:maxLength">6</item>
+    </style>
+
+    <style name="AuthValidateButton">
+        <item name="android:layout_marginTop">@dimen/auth_main_button_margin</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="AuthValidateButton.Number">
+        <item name="android:background">@drawable/bg_black_rounded_button</item>
+        <item name="android:textAppearance">@style/Text13SomeFontSlabWebBoldWhite</item>
+        <item name="android:text">@string/auth_button_default_text</item>
+    </style>
+
+    <style name="AuthValidateButton.Password">
+        <item name="android:background">@drawable/bg_bordered_rounded_button</item>
+        <item name="android:textAppearance">@style/Text13SomeFontSlabWebBoldBlack</item>
+        <item name="android:text">@string/auth_retry_again_text</item>
+    </style>
+
+    <style name="AuthOfferTitle">
+        <item name="android:textSize">@dimen/text_size_big</item>
+        <item name="android:fontFamily">@font/some_font__web_bold</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_common</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@color/black_to_rename</item>
+    </style>
+
+    <style name="AuthMoveToOfferButton">
+        <item name="android:layout_marginBottom">@dimen/onboarding_common_margin</item>
+        <item name="android:background">@drawable/bg_white_rounded_button</item>
+        <item name="android:drawableTop">@drawable/ic_arrow_down</item>
+        <item name="android:paddingTop">@dimen/auth_button_move_to_offer_padding</item>
+        <item name="android:textColor">@color/black_to_rename</item>
+    </style>
+
+    <style name="AuthMoveToAuthButton">
+        <item name="android:layout_marginTop">@dimen/margin_big</item>
+        <item name="android:layout_marginBottom">@dimen/onboarding_common_margin</item>
+        <item name="android:background">@drawable/bg_white_rounded_button</item>
+        <item name="android:drawableLeft">@drawable/ic_arrow_up</item>
+        <item name="android:textColor">@color/black_to_rename</item>
+        <item name="android:elevation">@dimen/elevation_big</item>
+        <item name="android:fontFamily">@font/some_font__web_bold</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_zero</item>
+        <item name="android:text">@string/auth_move_to_auth_button_text</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_size_common</item>
+    </style>
+
+    <style name="AuthMoveToFullOffer">
+        <item name="android:layout_marginTop">@dimen/auth_move_to_full_offer_top_margin</item>
+        <item name="android:fontFamily">@font/some_font__web_bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/auth_move_to_full_offer_text</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+</resources>

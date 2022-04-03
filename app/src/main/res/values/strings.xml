@@ -1,0 +1,181 @@
+<resources>
+    <string name="app_name">SomeApp</string>
+    <string name="ru_language">русский</string>
+    <string name="ru_language_text">Русский</string>
+    <string name="kz_language">қазақ тілі</string>
+    <string name="kz_language_text">Қазақша</string>
+    <string name="journal">Журнал</string>
+    <string name="contacts">Контакты</string>
+    <string name="profile">Профиль</string>
+    <string name="search">Поиск</string>
+    <string name="add">Добавить</string>
+    <string name="remove">Удалить</string>
+    <string name="cancel">Отмена</string>
+    <string name="keep">Оставить</string>
+
+    <string name="error_no_internet_snackbar">Отсутствует интернет-соединение</string>
+    <string name="error_common_snackbar">Сервис временно недоступен. Попробуйте позже</string>
+
+    <string name="error_screen_no_internet_title">Отсутствует\nинтернет-соединение</string>
+    <string name="error_screen_no_internet_description">Проверьте уровень сигнала\nи попробуйте еще раз</string>
+    <string name="error_screen_common_error_title">Сервис временно недоступен</string>
+    <string name="error_screen_common_error_description">Наши инженеры делают все возможное, чтобы восстановить его работу, как можно скорее</string>
+    <string name="error_screen_button_text">Обновить</string>
+
+    <string name="snackbar_text_contacts_synchronized_is_success">Контакты успешно синхронизированы</string>
+    <string name="snackbar_text_contact">Контакт </string>
+    <string name="snackbar_text_saved_is_success">успешно сохранён</string>
+    <string name="snackbar_text_deleted_is_success">удалён</string>
+    <string name="snackbar_text_week_subscription_success_connected">Услуга "Услуга №1" успешно подключена</string>
+    <string name="snackbar_text_month_subscription_success_connected">Услуга "Услуга №2" успешно подключена</string>
+    <string name="snackbar_text_week_subscription_success_deleted">Услуга "Услуга №1" успешно отключена</string>
+    <string name="snackbar_text_month_subscription_success_deleted">Услуга "Услуга №2" успешно отключена</string>
+    <string name="snackbar_text_delete_record_is_success">Запись звонка удалена</string>
+
+    <string name="common_dialog_success_activate_subscription_title">Подключена услуга</string>
+    <string name="common_dialog_error_activate_subscription_title">Ошибка при подключении</string>
+    <string name="common_dialog_error_activate_subscription_description">При подключении услуги произошла ошибка. Проверьте остаток на счёте и повторите попытку.</string>
+    <string name="common_dialog_deactivate_subscription_title">Отключение услуги</string>
+    <string name="common_dialog_deactivate_subscription_description">Вы действительно хотите отключить услугу? Запись всех ваших звонков будет остановлена.</string>
+    <string name="common_dialog_connect_to_month_subscription_blocked_description">До %s активна услуга «Услуга №1». После вы сможете подключить «Услуга №2».</string>
+    <string name="common_dialog_connect_to_week_subscription_blocked_description">У вас активна услуга «Услуга №2». Её нужно отключить для перехода на другую услугу.</string>
+    <string name="common_dialog_blocked_5_min_for_spam_description">Уважаемый абонент, мы заметили подозрительную активность с вашего номера. Ваш номер был заблокирован на 5 минут.</string>
+    <string name="common_dialog_blocked_24_h_for_spam_description">Уважаемый абонент, мы заметили неоднократную подозрительную активность с вашего номера. Ваш номер был заблокирован на 24 часа.</string>
+    <string name="common_dialog_delete_callrecord_title">Удаление записи звонка</string>
+    <string name="common_dialog_delete_callrecord_description">Вы действительно хотите удалить запись звонка?</string>
+    <string name="common_dialog_error_add_repeated_contact_description">Не удалось добавить контакт. Контакт с таким номером уже есть в книге контактов.</string>
+    <string name="common_dialog_delete_contact_title">Удаление записи звонка</string>
+    <string name="common_dialog_delete_contact_description">Вы действительно хотите удалить контакт?</string>
+    <string name="common_dialog_yes_delete_button_text">Да, удалить</string>
+    <string name="common_dialog_stay_it_button_text">Оставить</string>
+    <string name="common_dialog_no_stay_it_button_text">Нет, оставить</string>
+    <string name="common_dialog_understand_button_text">Понятно</string>
+    <string name="common_dialog_add_button_text">Добавить</string>
+    <string name="common_dialog_cancel_button_text">Отмена</string>
+    <string name="common_dialog_yes_deactivate_button_text">Да, отключить</string>
+    <string name="common_dialog_retry_button_text">Повторить</string>
+    <string name="common_dialog_ok_button_text">Ок</string>
+    <string name="common_dialog_exit_title">Выход</string>
+    <string name="common_dialog_exit_description">Вы действительно хотите выйти из приложения?</string>
+    <string name="common_dialog_exit_yes_button_text">Да, выйти</string>
+    <string name="common_dialog_delete_subscription_title">Отключение подписки</string>
+    <string name="common_dialog_delete_subscription_description">Вы действительно хотите отключить подписку? Запись всех ваших звонков будет оставновлена.</string>
+    <string name="common_dialog_already_active_week_subscription_description">У вас активна услуга <font fgcolor='#0098DC'>«Услуга №1»</font>. Её нужно отключить для перехода на другую услугу.</string>
+    <string name="common_dialog_already_active_month_subscription_description">У вас активна услуга <font fgcolor='#0098DC'>«Услуга №2»</font>. Её нужно отключить для перехода на другую услугу.</string>
+
+    <string name="onboarding1_title">Приветствую</string>
+    <string name="onboarding1_description">Это приложение - один из моих проектов с большой долей вырезанного функционала. Но оценить качество кода по нему вполне получится. Удачи :)</string>
+    <string name="onboarding2_title">Пройди авторизацию</string>
+    <string name="onboarding2_description">Жми дальше или крестик в верхнем левом углу. Авторизация сейас настроена так, что любой номер и код пройдут валидацию.</string>
+    <string name="onboarding_button_text">Дальше</string>
+
+    <string name="auth_offer_title">Публичная оферта</string>
+    <string name="auth_offer_description">Подключая и/или используя Услугу, Абонент соглашается с Условиями услуги и гарантирует, что будет использовать ее в целях, не нарушающих действующее законодательство Республики Казахстан. Абонент самостоятельно несет всю ответственность за использование Услуги.</string>
+    <string name="auth_move_to_full_offer_text">Читать полный текст оферты</string>
+    <string name="auth_enter_number_hint">+7</string>
+    <string name="auth_enter_password_hint">Введите пароль</string>
+    <string name="auth_number_hint">Номер телефона</string>
+    <string name="auth_password_hint">Пароль</string>
+    <string name="auth_true_number">7%s</string>
+    <string name="auth_error_number">Номер телефона не принадлежит</string>
+    <string name="auth_error_empty_number">Номер телефона не введен</string>
+    <string name="auth_error_not_full_number">Номер телефона введен неверно</string>
+    <string name="auth_error_code">Код введен неверно</string>
+    <string name="auth_button_default_text">Дальше</string>
+    <string name="auth_number_title">Ваш номер телефона</string>
+    <string name="auth_password_title">Пароль для входа</string>
+    <string name="auth_password_description">Пароль отправлен в SMS на номер\n+7 %s</string>
+    <string name="auth_move_to_auth_button_text">К авторизации</string>
+    <string name="auth_retry_again_text">Отправить еще раз</string>
+    <string name="auth_timer_default_text">2:00</string>
+    <string name="auth_spam_block_title">Доступ временно заблокирован</string>
+    <string name="auth_5_minutes_block_description">Уважаемый абонент, мы заметили подозрительную активность с вашего номера. Ваш номер был заблокирован на 5 минут.</string>
+    <string name="auth_24_hours_block_description">Уважаемый абонент, мы заметили неоднократную подозрительную активность с вашего номера. Ваш номер был заблокирован на 24 часа.</string>
+
+    <string name="contacts_empty_title">Контактов пока нет</string>
+
+    <string name="contacts_empty_text">Разрешите синхронизацию\nс вашей телефонной книгой\nили создайте контакты вручную</string>
+    <string name="contacts_not_sync_title">Контакты\nне синхронизированы</string>
+    <string name="contacts_not_sync_text">Чтобы в приложении отображались\nваши контакты, необходимо дать\nразрешение на их синхронизацию</string>
+    <string name="contacts_sync_button">Синхронизировать</string>
+    <string name="contacts_allow_sync_button">Разрешить синхронизацию</string>
+    <string name="contacts_empty_search_stub">Контакты не найдены</string>
+
+    <string name="contacts_remove_dialog_title">Удаление контакта</string>
+    <string name="contacts_remove_dialog_text">Вы действительно хотите удалить контакт?</string>
+    <string name="contacts_alert_contact_removed">Контакт %s удален</string>
+
+    <string name="contacts_edit_new_title">Новый контакт</string>
+    <string name="contacts_edit_edit_title">Редактировать контакт</string>
+    <string name="contacts_edit_phone_number_label">Номер телефона</string>
+    <string name="contacts_edit_phone_number_hint">Введите номер телефона</string>
+    <string name="contacts_edit_name_label">Имя</string>
+    <string name="contacts_edit_name_hint">Введите имя и фамилию</string>
+    <string name="contacts_edit_button_add">Добавить контакт</string>
+    <string name="contacts_edit_button_save">Сохранить контакт</string>
+    <string name="contacts_edit_empty_name">Не введены имя и фамилия</string>
+    <string name="contacts_edit_empty_phone">Не введен номер телефона</string>
+    <string name="contacts_edit_invalid_phone">Номер телефона введен в неверном формате</string>
+    <string name="contacts_edit_successfully_saved">Контакт %s успешно сохранен</string>
+
+    <string name="contacts_sync_dialog_title">Синхронизировать контакты</string>
+    <string name="contacts_sync_dialog_text">Вы разрешаете доступ к телефонной книге? Потом вы сможете изменить эту настройку в разделе "Профиль" или в настройках телефона.</string>
+    <string name="contacts_sync_allow">Разрешить</string>
+    <string name="contacts_sync_disallow">Запретить</string>
+
+    <string name="contact_bottomsheet_edit">Редактировать контакт</string>
+    <string name="contact_bottomsheet_remove">Удалить контакт</string>
+    <string name="contacts_search_empty_text">Введите имя контакта или номер телефона</string>
+
+    <string name="profile_about_product">Об услуге</string>
+    <string name="profile_rate_app">Оценить приложение</string>
+    <string name="profile_language_app">Язык приложения</string>
+    <string name="profile_privacy_policy">Политика конфиденциальности</string>
+    <string name="profile_about_app">О приложении</string>
+    <string name="profile_sync_contacts">Синхронизация контактов</string>
+    <string name="profile_logout">Выйти из профиля</string>
+    <string name="profile_product_is_active_title">Услуга подключена</string>
+    <string name="profile_product_is_active_week_description">Услуга №1\nдо %s</string>
+    <string name="profile_product_is_active_month_description">Услуга №2</string>
+    <string name="profile_product_is_disabled_title">Услуга не подключена</string>
+    <string name="profile_product_is_disabled_description">Подключите услугу, чтобы получить доступ к записи звонков</string>
+    <string name="profile_product_is_blocked_title">Услуга заблокирована</string>
+    <string name="profile_product_is_blocked_description">Пополните баланс и доступ к услуге восстановится в течение дня</string>
+    <string name="profile_product_connect_button_text">Подключить услугу</string>
+    <string name="profile_product_management_button_text">Управлять услугой</string>
+    <string name="profile_logout_dialog_title">Выход</string>
+    <string name="profile_logout_dialog_text">Вы действительно хотите выйти из профиля?</string>
+    <string name="profile_logout_accept_button">Выйти</string>
+
+    <string name="manage_subscription_button_connect_text">Подключить</string>
+    <string name="manage_subscription_button_disconnect_text">Отключить услугу</string>
+    <string name="manage_subscription_week_price">Разовый платёж %@ ₸ за 7 дней</string>
+    <string name="manage_subscription_month_price">Абонентская плата %@ ₸ каждый месяц</string>
+    <string name="manage_subscription_week_description">Это единовременный платёж, после которого предоставляется доступ к записи звонков на 7 дней. Записи разговоров хранятся в течение месяца.</string>
+    <string name="manage_subscription_month_description">Звонки записываются каждый месяц, пока оформлена услуга. После отключения услуги доступ к старым записям сохраняется, новые записи не создаются. Записи разговоров хранятся в течение месяца.</string>
+    <string name="manage_subscription_week_until_date_text">до %s</string>
+    <string name="manage_subscription_month_connected">Подключена</string>
+
+    <string name="sync_contacts_toolbar_title">Разрешения на доступ</string>
+    <string name="sync_contacts_button_text">Перейти в настройки</string>
+
+    <string name="about_app_version">Версия %s</string>
+    <string name="about_app_from_date">от %s</string>
+
+    <string name="rate_app_empty_title">Оцените приложение</string>
+    <string name="rate_app_empty_text">Пожалуйста, поставьте оценку нашему приложению. Это поможет сделать его лучше и удобнее!</string>
+    <string name="rate_app_1_title">Очень плохо</string>
+    <string name="rate_app_1_text">Приложение не работает? Оставьте жалобу, и мы рассмотрим ее в ближайшее время.</string>
+    <string name="rate_app_2_title">Плохо</string>
+    <string name="rate_app_2_text">Есть проблемы в работе приложения? Напишите нам, и мы все исправим</string>
+    <string name="rate_app_3_title">Не очень хорошо</string>
+    <string name="rate_app_3_text">Есть пожелания по улучшению приложения? Напишите нам, и мы обязательно их учтем</string>
+    <string name="rate_app_4_title">Хорошо</string>
+    <string name="rate_app_4_text">Пожалуйста, поддержите нас, оставив отзыв в GPlay</string>
+    <string name="rate_app_5_title">Отлично</string>
+    <string name="rate_app_5_text">Пожалуйста, расскажите всем о преимуществах приложения</string>
+    <string name="rate_app_empty_button">Больше не спрашивать</string>
+    <string name="rate_app_bad_button">Пожаловаться</string>
+    <string name="rate_app_good_button">Оставить отзыв</string>
+
+</resources>

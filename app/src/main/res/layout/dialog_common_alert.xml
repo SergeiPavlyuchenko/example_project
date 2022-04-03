@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvCommonAlertDialogTitle"
+        style="@style/CommonAlertDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_big"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/error_screen_no_internet_title" />
+
+    <TextView
+        android:id="@+id/tvCommonAlertDialogDescription"
+        style="@style/CommonAlertDialogDescription"
+        android:layout_marginHorizontal="@dimen/margin_big"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCommonAlertDialogTitle"
+        tools:text="@string/error_screen_no_internet_description" />
+
+    <TextView
+        android:id="@+id/tvCommonAlertDialogPositiveButton"
+        style="@style/CommonAlertDialogButtonText.Positive"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCommonAlertDialogDescription"
+        tools:text="@string/error_screen_button_text" />
+
+    <TextView
+        android:id="@+id/tvCommonAlertDialogNegativeButton"
+        style="@style/CommonAlertDialogButtonText.Negative"
+        app:layout_constraintBottom_toBottomOf="@id/tvCommonAlertDialogPositiveButton"
+        app:layout_constraintEnd_toStartOf="@id/tvCommonAlertDialogPositiveButton"
+        app:layout_constraintTop_toTopOf="@id/tvCommonAlertDialogPositiveButton"
+        tools:text="@string/error_screen_button_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

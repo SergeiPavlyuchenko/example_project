@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_common"
+        android:paddingRight="@dimen/margin_common"
+        android:paddingTop="@dimen/margin_medium_small"
+        android:paddingBottom="@dimen/margin_medium_small"
+        android:textAppearance="@style/ContactBottomSheetTitle"
+        android:text="Какой-то текст удалённый из стрингов"/>
+
+    <RelativeLayout
+        android:id="@+id/add_to_blacklist"
+        style="@style/BottomDialogItemRoot">
+
+        <ImageView
+            style="@style/BottomDialogItemIcon"
+            android:src="@drawable/ic_done"/>
+
+        <TextView
+            android:id="@+id/add_to_blacklist_label"
+            style="@style/BottomDialogItemLabel"
+            android:text="Здесь была крутая фича"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/edit_contact"
+        style="@style/BottomDialogItemRoot">
+
+        <ImageView
+            style="@style/BottomDialogItemIcon"
+            android:src="@drawable/ic_edit" />
+
+        <TextView
+            style="@style/BottomDialogItemLabel"
+            android:text="@string/contact_bottomsheet_edit"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/remove_contact"
+        style="@style/BottomDialogItemRoot">
+
+        <ImageView
+            style="@style/BottomDialogItemIcon"
+            android:src="@drawable/ic_delete" />
+
+        <TextView
+            style="@style/BottomDialogItemLabel"
+            android:text="@string/contact_bottomsheet_remove"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

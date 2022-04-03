@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- ToDo rename file? -->
+    <solid android:color="@color/white" />
+    <corners android:radius="@dimen/progressbar_base_radius" />
+</shape>

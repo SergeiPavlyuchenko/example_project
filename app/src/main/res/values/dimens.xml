@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="corner_radius_common">8dp</dimen>
+    <dimen name="corner_radius_small">6dp</dimen>
+    <dimen name="rounded_dialog_radius">@dimen/corner_radius_common</dimen>
+    <dimen name="snackbar_radius">8dp</dimen>
+    <dimen name="progressbar_base_radius">8dp</dimen>
+    <dimen name="mach_constraint">0dp</dimen>
+    <dimen name="divider_width">1dp</dimen>
+    <dimen name="edittext_border_padding_negative">-2dp</dimen>
+    <dimen name="radiobutton_checked_border_width">6dp</dimen>
+
+    <dimen name="toolbar_height_common">56dp</dimen>
+
+    <dimen name="margin_none">0dp</dimen>
+    <dimen name="margin_extra_small">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium_small">12dp</dimen>
+    <dimen name="margin_common">16dp</dimen>
+    <dimen name="margin_big">24dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_extra_large">64dp</dimen>
+    <dimen name="margin_title">56dp</dimen>
+
+    <dimen name="text_size_small">12dp</dimen>
+    <dimen name="text_size_13">13dp</dimen>
+    <dimen name="text_size_14">14dp</dimen>
+    <dimen name="text_size_22">22dp</dimen>
+    <dimen name="text_size_common">16dp</dimen>
+    <dimen name="text_size_big">22dp</dimen>
+    <dimen name="text_size_title">@dimen/text_size_big</dimen>
+    <dimen name="text_size_p14">14dp</dimen>
+    <dimen name="text_size_big_button">13dp</dimen>
+    <dimen name="text_size_caption">15dp</dimen>
+
+    <dimen name="icon_size_common">24dp</dimen>
+    <dimen name="icon_size_big">48dp</dimen>
+
+    <dimen name="big_button_height">48dp</dimen>
+    <dimen name="big_button_corner_radius">30dp</dimen>
+
+    <dimen name="main_page_title_text_size">28dp</dimen>
+
+    <dimen name="bottom_dialog_item_height">56dp</dimen>
+
+    <dimen name="player_background_radius">12dp</dimen>
+    <dimen name="player_button_size">40dp</dimen>
+    <dimen name="player_seekbar_width">4dp</dimen>
+    <dimen name="player_seekbar_corner_radius">4dp</dimen>
+    <dimen name="player_seekbar_horizontal_margin">-8dp</dimen>
+    <dimen name="player_thumb_size">24dp</dimen>
+    <dimen name="player_thumb_border_width">2dp</dimen>
+
+    <dimen name="elevation_common">16dp</dimen>
+    <dimen name="elevation_big">24dp</dimen>
+
+    <dimen name="main_page_menu_height">56dp</dimen>
+    <dimen name="main_page_menu_icon_size">18dp</dimen>
+    <dimen name="line_spacing_extra_zero">0dp</dimen>
+    <dimen name="line_spacing_extra_one">1dp</dimen>
+    <dimen name="line_spacing_extra_common">3dp</dimen>
+    <dimen name="line_spacing_extra_big">5dp</dimen>
+
+    // ErrorScreen
+    <dimen name="error_screen_image_top_margin">56dp</dimen>
+    <dimen name="error_screen_horizontal_margin">@dimen/margin_large</dimen>
+    <dimen name="error_screen_top_margin_title">19dp</dimen>
+    <dimen name="error_screen_top_margin_description">@dimen/margin_small</dimen>
+    <dimen name="error_screen_height_button">48dp</dimen>
+    <dimen name="error_screen_radius_button">30dp</dimen>
+    <dimen name="error_screen_text_size_button">@dimen/text_size_13</dimen>
+    <dimen name="error_screen_bottom_margin_button">@dimen/margin_large</dimen>
+    <dimen name="snackbar_height">56dp</dimen>
+    <dimen name="snackbar_end_margin_text">12dp</dimen>
+
+    // BaseProgress
+    <dimen name="progress_view_size">36dp</dimen>
+    <dimen name="progress_view_bar_size">20dp</dimen>
+
+    // CommonAlertDialog
+    <dimen name="common_alert_dialog_text_size_description">14dp</dimen>
+    <dimen name="common_alert_dialog_text_size_button">@dimen/text_size_13</dimen>
+
+    // Onboarding
+    <dimen name="onboarding_dots_margin_bottom">32dp</dimen>
+    <dimen name="onboarding_dot_size">8dp</dimen>
+    <dimen name="onboarding_description_text_size">14dp</dimen>
+    <dimen name="onboarding_common_margin">20dp</dimen>
+    <dimen name="onboarding_image_size">300dp</dimen>
+
+    // Auth
+    <dimen name="auth_offer_top_margin">80dp</dimen>
+    <dimen name="auth_offer_number_password_hint_margin">40dp</dimen>
+    <dimen name="auth_offer_button_size">40dp</dimen>
+    <dimen name="auth_offer_bottom_margin">120dp</dimen>
+    <dimen name="auth_button_move_to_offer_padding">12dp</dimen>
+    <dimen name="auth_gradient_view_height">95dp</dimen>
+    <dimen name="auth_main_button_margin">40dp</dimen>
+    <dimen name="auth_move_to_full_offer_top_margin">32dp</dimen>
+    <dimen name="auth_text_input_layout_horizontal_margin">32dp</dimen>
+    <dimen name="auth_edittext_top_padding">12dp</dimen>
+    <dimen name="auth_retry_after_timer_horizontal_margin">96dp</dimen>
+    <dimen name="auth_retry_after_timer_top_margin">58dp</dimen>
+    <dimen name="auth_progressbar_top_margin">33dp</dimen>
+
+    // Profile
+    <dimen name="profile_custom_item_common_margin">20dp</dimen>
+    <dimen name="profile_custom_item_icon_start_margin">24dp</dimen>
+    <dimen name="profile_common_radius">8dp</dimen>
+    <dimen name="profile_logout_margin_vertical">40dp</dimen>
+    <dimen name="item_language_height">56dp</dimen>
+    <dimen name="item_language_margin">20dp</dimen>
+    <dimen name="item_language_margin_start">28dp</dimen>
+
+    <dimen name="contacts_empty_title_top_margin">40dp</dimen>
+    <dimen name="contacts_blacklist_item_height">48dp</dimen>
+    <dimen name="contacts_list_header_height">46dp</dimen>
+
+    <dimen name="contacts_first_field_top_margin">64dp</dimen>
+    <dimen name="contacts_second_field_top_margin">44dp</dimen>
+    <dimen name="contacts_input_field_height">40dp</dimen>
+    <dimen name="contacts_edit_button_margin_top">64dp</dimen>
+
+    <dimen name="contacts_search_empty_label_margin_top">88dp</dimen>
+
+    <dimen name="blacklist_search_panel_height">56dp</dimen>
+    <dimen name="blacklist_item_min_height">52dp</dimen>
+
+    <dimen name="journal_tab_layout_height">48dp</dimen>
+    <dimen name="journal_empty_list_button_top_margin">40dp</dimen>
+
+    <dimen name="filter_group_label_height">46dp</dimen>
+    <dimen name="filter_radiobutton_height">48dp</dimen>
+    <dimen name="filter_button_label_left_margin">56dp</dimen>
+    <dimen name="filter_clear_button_bottom_margin">20dp</dimen>
+
+    <dimen name="rate_app_start_size">48dp</dimen>
+
+    <dimen name="normal_screens_height">640dp</dimen>
+
+</resources>

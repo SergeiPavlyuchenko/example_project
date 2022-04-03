@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MainPageTitle">
+        <item name="android:textSize">@dimen/main_page_title_text_size</item>
+        <item name="fontFamily">@font/some_font__web_bold</item>
+        <item name="android:textColor">@color/common_text</item>
+    </style>
+
+    <style name="FieldError">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="fontFamily">@font/open_sans_regular</item>
+        <item name="android:textColor">@color/attention_text</item>
+    </style>
+
+    <style name="ContactBottomSheetTitle">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/secondary_text</item>
+    </style>
+
+    <style name="ContactBottomSheetItem">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/text_size_p14</item>
+        <item name="android:textColor">@color/common_text</item>
+    </style>
+
+    <!-- Figma styles -->
+
+    <style name="H2">
+        <item name="fontFamily">@font/some_font__web_bold</item>
+        <item name="android:textSize">@dimen/text_size_title</item>
+    </style>
+
+    <style name="H4">
+        <item name="fontFamily">@font/some_font__web_bold</item>
+        <item name="android:textSize">@dimen/text_size_common</item>
+    </style>
+
+    <style name="P14">
+        <item name="fontFamily">@font/open_sans_semi_bold</item>
+        <item name="android:textSize">@dimen/text_size_p14</item>
+    </style>
+
+    <style name="P12">
+        <item name="fontFamily">@font/open_sans_semi_bold</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Caption">
+        <item name="fontFamily">@font/open_sans_bold</item>
+        <item name="android:textSize">@dimen/text_size_caption</item>
+    </style>
+
+    <style name="CaptionMini">
+        <item name="fontFamily">@font/some_font__web_bold</item>
+        <item name="android:textSize">@dimen/text_size_big_button</item>
+    </style>
+
+    <style name="TextNormal">
+        <item name="fontFamily">@font/open_sans_regular</item>
+        <item name="android:textSize">@dimen/text_size_common</item>
+    </style>
+
+</resources>

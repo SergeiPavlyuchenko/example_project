@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_to_rename">
+
+    <LinearLayout
+        android:id="@+id/llOnboardingContentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_snackbar_close"
+            android:layout_marginStart="@dimen/onboarding_common_margin"
+            android:layout_marginTop="@dimen/onboarding_common_margin"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_onboarding1"
+            android:layout_marginStart="@dimen/onboarding_common_margin"
+            android:layout_marginTop="@dimen/onboarding_common_margin"
+            />
+
+        <TextView
+            android:id="@+id/tvNotificationScreenTitle"
+            style="@style/ErrorScreen.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/error_screen_horizontal_margin"
+            android:text="@string/onboarding1_title" />
+
+        <TextView
+            android:id="@+id/tvNotificationScreenDescription"
+            style="@style/ErrorScreen.Description"
+            android:textSize="@dimen/onboarding_description_text_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/error_screen_horizontal_margin"
+            android:text="@string/onboarding1_description" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnNotificationScreenAction"
+            style="@style/ErrorScreen.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/error_screen_height_button"
+            android:background="@drawable/bg_white_rounded_button"
+            android:paddingHorizontal="32dp"
+            android:text="@string/onboarding_button_text" />
+
+        <LinearLayout
+            android:id="@+id/llDotsOnboarding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/vError"
+        layout="@layout/view_notification"
+        android:visibility="gone"
+        />
+
+</FrameLayout>

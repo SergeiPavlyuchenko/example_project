@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vProfileItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <ImageView
+        android:id="@+id/ivProfileItemImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/profile_custom_item_icon_start_margin"
+        android:layout_marginTop="@dimen/profile_custom_item_common_margin"
+        android:layout_marginEnd="@dimen/profile_custom_item_common_margin"
+        android:layout_marginBottom="@dimen/profile_custom_item_common_margin"
+        android:src="@drawable/ic_privacy_policy" />
+
+    <TextView
+        android:id="@+id/tvProfileItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/profile_custom_item_common_margin"
+        android:layout_marginEnd="@dimen/margin_common"
+        android:textAppearance="@style/Text16OpenSansRegularBlack"
+        tools:text="@string/profile_privacy_policy" />
+
+</merge>

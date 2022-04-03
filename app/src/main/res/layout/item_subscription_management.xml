@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llSubscriptionManagement"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_progressbar_base"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/margin_common">
+
+    <LinearLayout
+        android:id="@+id/llSubscriptionManagementInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_common"
+        android:background="@drawable/bg_green_rounded_info"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/margin_small"
+            android:src="@drawable/ic_circle_ok" />
+
+        <TextView
+            android:id="@+id/tvSubscriptionManagementInfoDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:paddingVertical="@dimen/margin_extra_small"
+            android:textAppearance="@style/Text14OpenSansSemiBoldShadowGray"
+            android:textColor="@color/white"
+            tools:text="до 03.03.2021" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSubscriptionManagementTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_common"
+        android:maxLines="1"
+        android:textAppearance="@style/Text16SomeFontSlabWebBoldBlack"
+        tools:text="@string/profile_product_is_active_week_description" />
+
+    <TextView
+        android:id="@+id/tvSubscriptionManagementPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:maxLines="1"
+        android:textAppearance="@style/Text14OpenSansSemiBoldBlue"
+        tools:text="@string/manage_subscription_week_price" />
+
+    <TextView
+        android:id="@+id/tvSubscriptionManagementDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_common"
+        android:textAppearance="@style/Text14OpenSansSemiBoldShadowGray"
+        tools:text="@string/manage_subscription_week_description" />
+
+    <TextView
+        android:id="@+id/btnSubscriptionManagement"
+        style="@style/ContactsSyncButton"
+        android:layout_marginHorizontal="@dimen/margin_common"
+        android:layout_marginBottom="@dimen/margin_common"
+        android:layout_marginTop="@dimen/margin_none"
+        android:visibility="gone"
+        android:text="@string/manage_subscription_button_connect_text" />
+
+</LinearLayout>

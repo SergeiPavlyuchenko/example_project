@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_to_rename">#181C1F</color> <!-- ToDo rename or remove -->
+    <color name="grey">#F8F8F9</color>
+    <color name="shadowGrey">#97979B</color>
+    <color name="red">#B30D14</color>
+    <color name="lightRed">#FFEFF0</color>
+    <color name="blue">#0098DC</color>
+    <color name="green">#75ad3f</color>
+    <color name="hint">#DADDE0</color>
+<!--    <color name="mtrl_textinput_default_box_stroke_color">@color/red</color>-->
+
+    <color name="bottomsheet_close_button">#bfc6d1</color>
+
+    <color name="playing_record_background">#f2fafd</color>
+
+    <color name="common_background">@color/grey</color>
+
+    <color name="common_text">@color/black_to_rename</color>
+    <color name="secondary_text">@color/shadowGrey</color>
+
+    <color name="attention_text">@color/red</color>
+
+    <color name="rate_app_title">#1f2229</color>
+
+</resources>

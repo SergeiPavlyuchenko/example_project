@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:top="@dimen/edittext_border_padding_negative"
+        android:left="@dimen/edittext_border_padding_negative"
+        android:right="@dimen/edittext_border_padding_negative">
+        <shape>
+            <stroke android:color="@color/hint" android:width="@dimen/divider_width"/>
+        </shape>
+    </item>
+</layer-list>

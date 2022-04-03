@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/common_background"
+    tools:ignore="ContentDescription,SpUsage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/edit_contact_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height_common"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/white"
+            app:title="@string/contacts_edit_edit_title"
+            app:titleTextAppearance="@style/H4"
+            app:navigationIcon="@drawable/ic_back_arrow"/>
+
+        <TextView
+            android:id="@+id/phone_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:layout_marginTop="@dimen/contacts_first_field_top_margin"
+            android:singleLine="true"
+            android:textAppearance="@style/P12"
+            android:textColor="@color/common_text"
+            android:text="@string/contacts_edit_phone_number_label"/>
+
+        <EditText
+            android:id="@+id/phone_input"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/contacts_input_field_height"
+            app:layout_constraintTop_toBottomOf="@id/phone_label"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:layout_marginTop="@dimen/margin_extra_small"
+            android:background="@drawable/bg_bottom_line_edittext"
+            android:singleLine="true"
+            android:inputType="phone"
+            android:textAppearance="@style/TextNormal"
+            android:textColor="@color/common_text"
+            android:textColorHint="@color/secondary_text"
+            android:hint="@string/contacts_edit_phone_number_hint"/>
+
+        <TextView
+            android:id="@+id/phone_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/phone_input"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:layout_marginTop="@dimen/margin_extra_small"
+            android:textAppearance="@style/FieldError"
+            android:visibility="gone"
+            tools:text="@string/contacts_edit_phone_number_hint"/>
+
+        <TextView
+            android:id="@+id/name_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/phone_input"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:layout_marginTop="@dimen/contacts_second_field_top_margin"
+            android:singleLine="true"
+            android:textAppearance="@style/P12"
+            android:textColor="@color/common_text"
+            android:text="@string/contacts_edit_name_label"/>
+
+        <EditText
+            android:id="@+id/name_input"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/contacts_input_field_height"
+            app:layout_constraintTop_toBottomOf="@id/name_label"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:layout_marginTop="@dimen/margin_extra_small"
+            android:background="@drawable/bg_bottom_line_edittext"
+            android:maxLength="50"
+            android:singleLine="true"
+            android:textAppearance="@style/TextNormal"
+            android:textColor="@color/common_text"
+            android:textColorHint="@color/secondary_text"
+            android:hint="@string/contacts_edit_name_hint"/>
+
+        <TextView
+            android:id="@+id/name_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/name_input"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:layout_marginTop="@dimen/margin_extra_small"
+            android:textAppearance="@style/FieldError"
+            android:visibility="gone"
+            tools:text="@string/contacts_edit_name_hint"/>
+
+        <TextView
+            android:id="@+id/save_button"
+            style="@style/BigButton.Black"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/name_input"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:layout_marginTop="@dimen/contacts_edit_button_margin_top"
+            android:text="@string/contacts_edit_button_add"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/vError"
+        layout="@layout/view_notification"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/vProgress"
+        layout="@layout/progressbar_base"
+        android:layout_width="@dimen/progress_view_size"
+        android:layout_height="@dimen/progress_view_size"
+        android:layout_gravity="center"/>
+
+</FrameLayout>

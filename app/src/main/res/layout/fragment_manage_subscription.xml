@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+
+    <LinearLayout
+        android:id="@+id/llManageSubscriptionContentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbManageSubscription"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginBottom="@dimen/margin_common"
+            android:background="@color/white"
+            app:navigationIcon="@drawable/ic_back_arrow"
+            app:title="@string/profile_product_management_button_text"
+            app:titleTextAppearance="@style/Text16SomeFontSlabWebBoldBlack" />
+
+        <include
+            android:id="@+id/itemManageSubscriptionWeek"
+            layout="@layout/item_subscription_management"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_common" />
+
+        <include
+            android:id="@+id/itemManageSubscriptionMonth"
+            layout="@layout/item_subscription_management"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_common"
+            android:layout_marginTop="@dimen/margin_small" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/vProgress"
+        layout="@layout/progressbar_base"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/vError"
+        layout="@layout/view_notification"
+        android:visibility="gone" />
+
+</FrameLayout>
+

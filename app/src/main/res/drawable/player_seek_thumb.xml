@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <solid android:color="@color/blue"/>
+
+    <stroke
+        android:width="@dimen/player_thumb_border_width"
+        android:color="@color/white"/>
+
+    <size
+        android:width="@dimen/player_thumb_size"
+        android:height="@dimen/player_thumb_size" />
+
+</shape>

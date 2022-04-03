@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BigButton">
+        <item name="android:layout_height">@dimen/big_button_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textAppearance">@style/CaptionMini</item>
+    </style>
+
+    <style name="BigButton.Black">
+        <item name="android:background">@drawable/bg_black_rounded_button</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="BigButton.Border">
+        <item name="android:background">@drawable/bg_bordered_rounded_button</item>
+        <item name="android:textColor">@color/common_text</item>
+    </style>
+
+    <style name="ContactsSyncButton" parent="BigButton.Black">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/margin_big</item>
+        <item name="android:text">@string/contacts_sync_button</item>
+    </style>
+
+    <style name="BottomDialogItemRoot">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/bottom_dialog_item_height</item>
+        <item name="android:paddingLeft">@dimen/margin_common</item>
+        <item name="android:paddingRight">@dimen/margin_common</item>
+    </style>
+
+    <style name="BottomDialogItemIcon">
+        <item name="android:id">@id/item_icon</item>
+        <item name="android:layout_width">@dimen/icon_size_common</item>
+        <item name="android:layout_height">@dimen/icon_size_common</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:tint">@color/common_text</item>
+    </style>
+
+    <style name="BottomDialogItemLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_toRightOf">@id/item_icon</item>
+        <item name="android:layout_marginLeft">@dimen/margin_big</item>
+        <item name="android:textAppearance">@style/ContactBottomSheetItem</item>
+    </style>
+
+    <style name="FilterGroupLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/filter_group_label_height</item>
+        <item name="android:paddingLeft">@dimen/margin_common</item>
+        <item name="android:paddingRight">@dimen/margin_common</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">@style/P12</item>
+        <item name="android:textColor">@color/common_text</item>
+    </style>
+
+    <style name="FilterGroupRoot">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_common</item>
+        <item name="android:layout_marginRight">@dimen/margin_common</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/bg_progressbar_base</item>
+    </style>
+
+    <style name="FilterItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/filter_radiobutton_height</item>
+    </style>
+
+    <style name="FilterRadioButton">
+        <item name="android:layout_width">@dimen/icon_size_common</item>
+        <item name="android:layout_height">@dimen/icon_size_common</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/margin_common</item>
+        <item name="android:background">@drawable/radio_button</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="FilterItemText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/filter_button_label_left_margin</item>
+        <item name="android:textAppearance">@style/Caption</item>
+        <item name="android:textColor">@color/common_text</item>
+    </style>
+
+    <style name="RateAppStar">
+        <item name="android:layout_height">@dimen/rate_app_start_size</item>
+        <item name="android:layout_width">@dimen/rate_app_start_size</item>
+        <item name="android:src">@drawable/rate_app_star</item>
+        <item name="tint">@color/blue</item>
+    </style>
+</resources>

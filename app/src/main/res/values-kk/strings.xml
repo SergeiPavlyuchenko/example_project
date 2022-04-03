@@ -1,0 +1,73 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">SomeApp</string>
+    <string name="ru_language">русский</string>
+    <string name="ru_language_text">Русский</string>
+    <string name="kz_language">қазақ тілі</string>
+    <string name="kz_language_text">Қазақша</string>
+    <string name="journal">Журнал</string>
+    <string name="contacts">Контактілер</string>
+    <string name="profile">Профиль</string>
+    <string name="search">Іздеу</string>
+    <string name="add">Қосу</string>
+    <string name="remove">Өшіру</string>
+    <string name="cancel">Кері қайту</string>
+    <string name="keep">Кері қайту</string>
+
+    <string name="onboarding1_title">Приветствую</string>
+    <string name="onboarding1_description">Это приложение - один из моих проектов с большой долей вырезанного функционала. Но оценить качество кода по нему вполне получится. Удачи :)</string>
+    <string name="onboarding2_title">Пройди авторизацию</string>
+    <string name="onboarding2_description">Жми дальше или крестик в верхнем левом углу. Авторизация сейас настроена так, что любой номер и код пройдут валидацию.</string>
+    <string name="onboarding_button_text">Дальше</string>
+
+    <string name="profile_about_product">Қызмет туралы</string>
+    <string name="profile_rate_app">Қосымшаны бағалаңыз</string>
+    <string name="profile_language_app">Қосымшаның тілі</string>
+    <string name="profile_privacy_policy">Құпиялылық саясат</string>
+    <string name="profile_about_app">Қосымша туралы</string>
+    <string name="profile_sync_contacts">Контактіні синхрондау</string>
+    <string name="profile_logout">Профильдан шығу</string>
+    <string name="profile_product_is_active_title">Қызмет қосылды</string>
+    <string name="profile_product_is_active_week_description">Бір апталық сөйлесу жазбалары\n%s Дейін</string>
+    <string name="profile_product_is_active_month_description">Бір айлық сөйлесу жазбалары</string>
+    <string name="profile_product_is_disabled_title">Қызмет қосылмаған</string>
+    <string name="profile_product_is_disabled_description">Сөйлесулерді жазу және тыңдау үшін қызметті қосыңыз</string>
+    <string name="profile_product_is_blocked_title">Қызмет бұғатталған</string>
+    <string name="profile_product_is_blocked_description">Тенгеріміңізді толтырыңыз, сол кезде қызметке қол жеткізу бір күн ішінде қалпына келтіріледі</string>
+    <string name="profile_product_connect_button_text">Қызметті басқару</string>
+    <string name="profile_product_management_button_text">Қызметпен басқару</string>
+    <string name="profile_logout_dialog_title">Шығу</string>
+    <string name="profile_logout_dialog_text">Профильден шынымен шыққыңыз келе ме?</string>
+    <string name="profile_logout_accept_button">Шығу</string>
+
+    <string name="manage_subscription_button_connect_text">Қосу</string>
+    <string name="manage_subscription_button_disconnect_text">Қызметті өшіру</string>
+    <string name="manage_subscription_week_price">Бір реттік төлем %@ ₸ 7 күнге</string>
+    <string name="manage_subscription_month_price">Ай сайын абонентік төлем %@ ₸</string>
+    <string name="manage_subscription_week_description">Бұл бір реттік төлем, одан кейін қоңырауды жазуға қол жеткізу 7 күн бойы беріледі. Жазбалар бір ай бойы сақталады.</string>
+    <string name="manage_subscription_month_description">Қызмет көрсетілетін мерзімде қоңыраулар әр ай сайын жазылады. Қызметті өшіргеннен кейін, ескі жазбаларға қол жетімділік сақталады, жаңа жазбалар жасалмайды. Сөйлесу жазбалары бір ай бойы сақталады.</string>
+    <string name="manage_subscription_week_until_date_text">%s дейін</string>
+    <string name="manage_subscription_month_connected">Қосулы</string>
+
+    <string name="sync_contacts_toolbar_title">Разрешения на доступ</string>
+    <string name="sync_contacts_button_text">Параметрлерге өтіңіз</string>
+
+    <string name="about_app_version">Нұсқа %s</string>
+    <string name="about_app_from_date">%s айынан</string>
+
+    <string name="rate_app_empty_title">Қосымшаны бағалаңыз</string>
+    <string name="rate_app_empty_text">Біздің қосымшаны бағалаңыз. Бұл оны жақсырақ және ыңғайлы етуге көмектеседі!</string>
+    <string name="rate_app_1_title">Өте жаман</string>
+    <string name="rate_app_1_text">Қосымша жұмыс істемейді ме? Шағымыңызды жіберіңіз, біз оны мүмкіндігінше тезірек қарастырамыз.</string>
+    <string name="rate_app_2_title">Жаман</string>
+    <string name="rate_app_2_text">Қосымшада ақаулар бар ма? Бізге жазыңыз, біз бәрін түзейміз</string>
+    <string name="rate_app_3_title">Онша емес</string>
+    <string name="rate_app_3_text">Қосымшаны жақсарту бойынша ұсыныстарыңыз бар ма? Бізге жазыңыз, біз оларды міндетті түрде ескереміз</string>
+    <string name="rate_app_4_title">Жақсы</string>
+    <string name="rate_app_4_text">GPlay- да пікір қалдырып бізді қолдаңыз</string>
+    <string name="rate_app_5_title">Керемет</string>
+    <string name="rate_app_5_text">Қосымшаныі артықшылықтарың барлығына айтып өтіңіз</string>
+    <string name="rate_app_empty_button">Қайта сұрамау</string>
+    <string name="rate_app_bad_button">Шағымдану</string>
+    <string name="rate_app_good_button">Пікір қалдыру</string>
+
+</resources>

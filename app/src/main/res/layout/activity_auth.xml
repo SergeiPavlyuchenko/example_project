@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clAuthActivityContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/authToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back_arrow" />
+
+    <LinearLayout
+        android:id="@+id/llAuthContentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvAuthTitle"
+            style="@style/AuthTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/auth_number_title" />
+
+        <TextView
+            android:id="@+id/tvAuthDescription"
+            style="@style/AuthDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Пароль отправлен в SMS на номер\n+7 123 456-89-90" />
+
+        <TextView
+            android:id="@+id/tvAuthNumberPasswordHint"
+            style="@style/AuthNumberPasswordHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/auth_text_input_layout_horizontal_margin"
+            android:text="@string/auth_number_hint" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilAuthEnterNumber"
+            style="@style/AuthTextInputLayout.Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/auth_text_input_layout_horizontal_margin">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/AuthEditText.Number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilAuthEnterPassword"
+            style="@style/AuthTextInputLayout.Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/auth_text_input_layout_horizontal_margin"
+            android:visibility="gone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/AuthEditText.Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"
+                android:maxLength="4"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/llRetryAfterTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_big"
+            android:layout_marginTop="@dimen/auth_retry_after_timer_top_margin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Text13SomeFontSlabWebBoldBlack"
+                tools:text="1:26" />
+
+            <TextView
+                android:id="@+id/tvRetryAgain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_common"
+                android:text="@string/auth_retry_again_text"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Text13SomeFontSlabWebBoldShadowGrey" />
+
+        </LinearLayout>
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btnAuthValidateNumber"
+            style="@style/AuthValidateButton.Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_big" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btnAuthSendSmsCode"
+            style="@style/AuthValidateButton.Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_big"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vGradientView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/auth_gradient_view_height"
+        android:background="@drawable/color_gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAuthMoveToOffer"
+        style="@style/AuthMoveToOfferButton"
+        android:layout_width="@dimen/auth_offer_button_size"
+        android:layout_height="@dimen/auth_offer_button_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAuthMoveToAuth"
+        style="@style/AuthMoveToAuthButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/auth_offer_button_size"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/svOffer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/vGradientView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvOfferTitle"
+                style="@style/AuthOfferTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_common"
+                android:layout_marginTop="@dimen/auth_move_to_full_offer_top_margin"
+                android:text="@string/auth_offer_title"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvOfferDescription"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="@dimen/margin_common"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_weight="1"
+                android:text="@string/auth_offer_description" />
+
+            <TextView
+                android:id="@+id/tvMoveToFullOffer"
+                style="@style/AuthMoveToFullOffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_common"
+                android:layout_marginBottom="@dimen/auth_offer_bottom_margin"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/pbAuthProgress"
+        layout="@layout/progressbar_base"
+        android:layout_width="@dimen/progress_view_size"
+        android:layout_height="@dimen/progress_view_size"
+        android:layout_marginTop="@dimen/auth_progressbar_top_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llAuthContentView"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/vError"
+        layout="@layout/view_notification"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

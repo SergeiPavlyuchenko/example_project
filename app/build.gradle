@@ -1,0 +1,191 @@
+import java.text.SimpleDateFormat
+
+apply plugin: 'com.android.application'
+
+apply plugin: 'com.google.firebase.crashlytics'
+
+apply plugin: 'com.google.gms.google-services'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+def marketVerName = "0.1"
+def qaVerName = "12"
+def devVerName = "0"
+def static buildDate() {
+    def df = new SimpleDateFormat("dd.MM.yyyy")
+    df.setTimeZone(TimeZone.default)
+    return df.format(new Date())
+}
+
+android {
+    buildFeatures {
+        viewBinding true
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    signingConfigs {
+        release {
+            keyAlias "someproject"
+            keyPassword "qqqqq1111"
+            storeFile file("../someProject.jks")
+            storePassword "PSA07TyNe13S89gj"
+        }
+    }
+    compileSdkVersion 31
+    defaultConfig {
+        applicationId "example.code.some_project"
+        minSdkVersion 23
+        targetSdkVersion 31
+        versionCode 1
+        buildConfigField "String", "BUILD_DATE", "\"${buildDate()}\""
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+
+    flavorDimensions "server", "client"
+    productFlavors {
+        market {
+            dimension 'client'
+            versionName = marketVerName
+        }
+        qa {
+            dimension 'client'
+            ext.betaDistributionEmails = "qa@intech-global.com"
+            versionName = marketVerName + "." + qaVerName
+        }
+        dev {
+            dimension 'client'
+            versionName = marketVerName + "." + qaVerName + "." + devVerName
+        }
+        server_test {
+            dimension 'server'
+            versionNameSuffix "_test"
+        }
+        server_preprod {
+            dimension 'server'
+            versionNameSuffix "_preprod"
+        }
+        server_prod {
+            dimension 'server'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    configurations.all {
+        exclude group: 'com.android.support', module: 'support-v13'
+    }
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.fragment:fragment:1.4.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    implementation 'com.google.firebase:firebase-config:19.1.1'
+
+    // koin
+    def koin_version= "3.1.2"
+    implementation "io.insert-koin:koin-core:$koin_version"
+    implementation "io.insert-koin:koin-android:$koin_version"
+    implementation "io.insert-koin:koin-android-compat:$koin_version"
+    implementation "io.insert-koin:koin-androidx-compose:$koin_version"
+
+    // moxy
+    def moxy_library_version = "2.2.2"
+    implementation "com.github.moxy-community:moxy:$moxy_library_version"
+    implementation "com.github.moxy-community:moxy-androidx:$moxy_library_version"
+    implementation "com.github.moxy-community:moxy-ktx:$moxy_library_version"
+    kapt "com.github.moxy-community:moxy-compiler:$moxy_library_version"
+
+    // retrofit
+    def retrofit_library_version = "2.9.0"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_library_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit_library_version"
+    implementation "com.squareup.retrofit2:converter-moshi:$retrofit_library_version"
+    implementation "com.squareup.retrofit2:converter-scalars:$retrofit_library_version"
+    implementation "com.squareup.retrofit2:converter-simplexml:$retrofit_library_version"
+
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.1"
+    implementation 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
+
+    // rxandroid
+    def rx_library_version = "2.1.1"
+    implementation "io.reactivex.rxjava2:rxandroid:$rx_library_version"
+    implementation "io.reactivex.rxjava2:rxjava:$rx_library_version"
+    implementation "io.reactivex.rxjava2:rxkotlin:2.4.0"
+    implementation "com.jakewharton.rxbinding2:rxbinding-kotlin:$rx_library_version"
+
+    def room_version = "2.4.1"
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-rxjava2:$room_version"
+
+    //Glide
+    def glide_library_version = "4.12.0"
+    implementation "com.github.bumptech.glide:glide:$glide_library_version"
+    kapt "com.github.bumptech.glide:compiler:$glide_library_version"
+    implementation "com.github.bumptech.glide:okhttp3-integration:$glide_library_version"
+
+    //Circle Image.
+    implementation "de.hdodenhof:circleimageview:3.1.0"
+    implementation 'me.relex:circleindicator:2.1.6'
+
+    //Circle progress
+    implementation "com.github.rey5137:material:1.2.5"
+
+    //Moshi
+    def moshiVer = '1.12.0'
+    implementation "com.squareup.moshi:moshi:$moshiVer"
+    implementation "com.squareup.moshi:moshi-kotlin:$moshiVer"
+    //Автоматически позволяет подключить классы парсера
+    kapt("com.squareup.moshi:moshi-kotlin-codegen:$moshiVer")
+
+    //Timber
+    def timberVer = '5.0.1'
+    implementation "com.jakewharton.timber:timber:$timberVer"
+
+    //KTX
+    def ktxVer = '1.7.0'
+    implementation "androidx.core:core-ktx:$ktxVer"
+
+    implementation "com.google.android.exoplayer:exoplayer:2.16.1"
+    implementation "com.google.android.exoplayer:exoplayer-ui:2.16.1"
+
+    implementation platform('com.google.firebase:firebase-bom:29.0.4')
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    //Paper
+    implementation 'io.paperdb:paperdb:2.6'
+    implementation 'com.github.pakoito:RxPaper2:1.2.0'
+}
+kapt {
+    generateStubs = true
+}
